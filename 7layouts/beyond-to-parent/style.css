@@ -1,0 +1,25 @@
+/* СТИЛИ ДЛЯ ЭЛЕМЕНТА, ВЫХОДЯЩЕГО ЗА РАМКИ */
+.outside {
+  /* 1. Задать размер родителя: 100% + два padding */
+  inline-size: calc(100% + 20px * 2);
+
+  /* 2. Сместить влево на один padding */
+  margin-inline-start: -20px;
+}
+
+
+
+/* СЛУЖЕБНЫЕ СТИЛИ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+.outside {
+  block-size: 200px;
+  border: 1px solid #000;
+}

@@ -1,0 +1,4 @@
+/* Удалить маркер (стрелочку) элемента <summary> */
+summary {
+  list-style: none;
+}

@@ -1,0 +1,10 @@
+.cardHeading {
+  min-block-size: 50px;
+  padding: var(--cardPadding);
+
+  font-size: 1em;
+  font-weight: 400;
+
+  background-color: var(--color-brand-light);
+  border-block-end: 1px solid var(--section-borderColor);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+<form class="form" action="#" method="GET" aria-labelledby="form__title">
+  <h2 class="form__title" id="form__title">Заголовок формы</h2>
+
+  <fieldset class="form__fieldset">
+    <legend class="form__legend">Заголовок блока полей</legend>
+    <ul class="form__options">
+      <li class="option  form__option">
+        <input class="option__input" type="radio" name="group1" value="radio1" id="group1-radio1" checked>
+        <label class="option__label" for="group1-radio1">Радио 1</label>
+      </li>
+      <li class="option  form__option">
+        <input class="option__input" type="radio" name="group1" value="radio2" id="group1-radio2">
+        <label class="option__label" for="group1-radio2">Радио 2</label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset class="form__fieldset">
+    <legend class="form__legend">Заголовок блока полей</legend>
+    <ul class="form__options">
+      <li class="option  form__option">
+        <input class="option__input" type="checkbox" name="group2" value="check1" id="group2-check1" checked>
+        <label class="option__label" for="group2-check1">Checkbox 1</label>
+      </li>
+      <li class="option  form__option">
+        <input class="option__input" type="checkbox" name="group2" value="check2" id="group2-check2" checked>
+        <label class="option__label" for="group2-check2">Checkbox 1</label>
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset class="form__fieldset">
+    <legend class="form__legend">Заголовок блока полей</legend>
+    <div class="field  form__field">
+      <label class="field__label" for="field1">Название</label>
+      <input class="field__input" id="field1" type="text" name="field1" placeholder="placeholder" />
+    </div>
+    <div class="field  form__field">
+      <label class="field__label" for="field2">Название</label>
+      <input class="field__input" id="field2" type="text" name="field2" placeholder="placeholder" />
+    </div>
+  </fieldset>
+
+  <fieldset class="form__fieldset">
+    <legend class="form__legend">Заголовок блока полей</legend>
+    <label class="field  form__field">
+      <span class="field__name">Название</span>
+      <textarea class="field__input" name="textarea" placeholder="placeholder"></textarea>
+    </label>
+  </fieldset>
+
+  <footer class="form__footer">
+    <button class="btn  form__submit" type="submit">Отправить форму</button>
+  </footer>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+.drago {
+  inline-size: 50px;
+  aspect-ratio: 1 / 1;
+  
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.drago--isDragged {
+  opacity: 0.4;
+}
+
+.dropzone {
+  inline-size: 200px;
+  aspect-ratio: 1 / 1;
+
+  border: 1px solid #000;
+}
+
+.dropzone--isOvered {
+  background-color: lightgoldenrodyellow;
+}

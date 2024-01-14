@@ -1,0 +1,6 @@
+.select {
+  inline-size: 100%;
+  padding: 5.5px;
+
+  border: 1px solid var(--input-borderColor);
+}

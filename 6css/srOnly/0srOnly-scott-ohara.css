@@ -1,0 +1,11 @@
+.srOnly:not(:focus):not(:active):not(:focus-within) {
+  position: absolute;
+
+  width: 0;
+  height: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(50%);
+  overflow: hidden;
+}

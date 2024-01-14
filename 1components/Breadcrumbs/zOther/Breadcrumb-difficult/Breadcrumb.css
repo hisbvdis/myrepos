@@ -1,0 +1,12 @@
+.breadcrumb {
+  display: flex;
+  padding-inline-start: 0;
+  padding-block: 10px;
+
+  list-style: none;
+}
+
+.breadcrumb__item + .breadcrumb__item::before {
+  content: "—";
+  margin-inline: 5px;
+}

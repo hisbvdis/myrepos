@@ -1,0 +1,61 @@
+/* 1. Some rules with "0" specificity... */
+:where(.navBtn) {
+  /* 1.1. ...to be able to position element with "position: absolute" */
+  position: relative;
+
+  /* 1.2. ...to be able to hide element with "display: none */
+  display: block;
+}
+
+.navBtn {
+  inline-size: 26px;
+  block-size: 19px;
+  padding: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navBtn__line {
+  position: absolute;
+
+  /* Important to specify "display:block" (otherwise browser automaticly set "left: 50%") */
+  display: block;
+  inline-size: 100%;
+  block-size: 3px;
+
+  background: #000;
+  transition: 0.25s;
+}
+
+.navBtn__line--1 {
+  inset-block-start: 0;
+}
+
+.navBtn__line--2 {
+  inset-block-start: 50%;
+  translate: 0 -50%;
+}
+
+.navBtn__line--3 {
+  inset-block-end: 0;
+}
+
+
+/* .navOpened */
+.root--navOpened .navBtn__line--1 {
+  inset-block-start: 50%;
+  translate: 0 -50%;
+  rotate: 45deg;
+}
+
+.root--navOpened .navBtn__line--2 {
+  opacity: 0;
+}
+
+.root--navOpened .navBtn__line--3 {
+  inset-block-end: 50%;
+  translate: 0 50%;
+  rotate: -45deg;
+}

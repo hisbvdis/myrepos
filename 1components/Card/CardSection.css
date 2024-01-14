@@ -1,0 +1,7 @@
+.cardSection {
+  padding: var(--cardPadding);
+}
+
+.cardSection + .cardSection {
+  border-block-start: 1px solid var(--section-borderColor);
+}

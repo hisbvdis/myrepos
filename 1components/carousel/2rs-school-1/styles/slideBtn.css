@@ -1,0 +1,17 @@
+.slideBtn {
+  inline-size: 14px;
+  block-size: 23px;
+  padding: 0;
+  
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slideBtn--prev {
+  background: url("../images/arrow-left.svg") center / 14px 23px no-repeat ;
+}
+
+.slideBtn--next {
+  background: url("../images/arrow-right.svg") center / 14px 23px no-repeat ;
+}

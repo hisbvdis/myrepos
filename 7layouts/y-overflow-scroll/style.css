@@ -1,0 +1,36 @@
+/* 
+1. Родителю прокручиваемого элемента:
+  1.1. Сделать Flex-контейнером `display: flex`
+  1.2. Задать основную ось по вертикали `flex-direction: column`
+  1.3. Ограничить максимальную высоту `max-block-size: 500px`
+*/
+.container--red {
+  display: flex;
+  flex-direction: column;
+  max-block-size: 500px;
+  padding: 50px;
+  
+  background-color: lightcoral;
+}
+
+
+/* 
+2. Прокручиваемому элементу
+  2.1. Добавить свойство `overflow-y: auto`
+*/
+.list--green {
+  margin: 0;
+  padding: 50px;
+  
+  background-color: lightgreen;
+  
+  list-style: none;
+  overflow-y: auto;
+}
+
+.item--blue {
+  min-block-size: 100px;
+
+  background-color: lightblue;
+  border: 1px solid darkblue;
+}

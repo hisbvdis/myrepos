@@ -1,0 +1,22 @@
+/* ============================================ */
+/* ============== БОКОВАЯ ПАНЕЛЬ ============== */
+/* ============================================ */
+.sidebar__content {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: -100%;
+  
+  inline-size: 280px;
+  block-size: 100vh;
+  margin: 0;
+  padding: 15px;
+
+  background-color: #fff;
+  overflow-y: auto;
+  list-style: none;
+  transition: inset-inline-start 0.2s;
+}
+
+.body--withOpenedModal .sidebar__content {
+  inset-inline-start: 0;
+}

@@ -1,0 +1,11 @@
+# Code editors hidden files
+*.vscode
+*.idea
+*.test
+
+# NPM
+node_modules/
+package-lock.json
+
+# Environment variables
+*.env

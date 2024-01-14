@@ -1,0 +1,22 @@
+/*
+  To avoid of automaticly adding of "left" property to absolutly positioned
+  elements:
+  1. Remove paddings for parent element
+  2. Specify "display: block" for child element
+*/
+
+button {
+  position: relative;
+
+  inline-size: 45px;
+
+  padding: 0; /* important */
+}
+
+span {
+  position: absolute;
+
+  display: block; /* important */
+  
+  inline-size: 100%;
+}

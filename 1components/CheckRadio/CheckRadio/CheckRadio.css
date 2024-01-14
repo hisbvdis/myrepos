@@ -1,0 +1,10 @@
+.checkRadio {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.checkRadio,
+.checkRadio__input {
+  cursor: pointer;
+}

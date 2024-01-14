@@ -1,0 +1,203 @@
+/* 
+==============================================================================
+========================= 1. НАЧАЛЬНЫЕ СТИЛИ =================================
+==============================================================================
+1.1. Если используется "gap", можно сразу задать "display: grid"
+*/
+.card {
+  display: grid;
+  gap: 10px;
+}
+
+
+
+/* 
+==============================================================================
+====================== 2. ЗАДАНИЕ СХЕМЫ СЕТКИ ================================
+==============================================================================
+*/
+@media (width >=420px) {
+  .card {
+    /* 2.1. Размеры колонок/строк задавать через "grid-template-columns/rows",
+            иначе — они будут иметь размер "auto" */
+    grid-template-columns: 1fr 2fr;
+
+    /* 2.2. Схему сетки удобно задавать и переопределять свойством "grid-template-areas" */
+    grid-template-areas:
+      "name name"
+      "rating rating"
+      "slogan slogan"
+      "photo actions";
+  }
+  
+  /*
+  2.3. >>>>>>>>>> ВАЖНО<<<<<<<<<<
+       Задавать областям имена свойствами "grid-area" нужно только тогда, когда
+       эти с помощью этих имён задаётся схема сетки в свойстве "grid-template-areas".
+       Иначе — все элементы сетки сместятся в одну ячейку.
+  */
+  .card__name {
+    grid-area: name;
+  }
+
+  .card__rating {
+    grid-area: rating;
+  }
+
+  .card__slogan {
+    grid-area: slogan;
+  }
+
+  .card__photo {
+    grid-area: photo;
+  }
+
+  .actions {
+    grid-area: actions;
+  }
+}
+
+
+
+/* 
+==============================================================================
+===================== 3. ПЕРЕОПРЕДЕЛЕНИЕ СХЕМЫ СЕТКИ =========================
+==============================================================================
+3.1. Для изменения схемы сетки достаточно задавать "новые размеры" и "схему сетки"
+*/
+@media (width >= 520px) {
+  .card {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "photo name"
+      "photo rating"
+      "slogan slogan"
+      "actions actions";
+  }
+}
+
+@media (width >= 678px) {
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "name name rating"
+      "photo slogan slogan"
+      "photo actions actions";
+  }
+}
+
+
+
+
+
+
+
+
+/* ======================================================================== */
+/* NOT IMPORTANT — DECORATIVE STYLES */
+/* ======================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+.card {
+  padding: 15px;
+
+  text-align: center;
+  
+  border: 1px solid #8C3831;
+}
+
+.card__name {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.card__rating {
+  font-size: 1.5rem;
+}
+
+.card__slogan {
+  font-style: italic;
+}
+
+.card__photo {
+  margin: 0;
+  padding: 0;
+}
+
+.card__img {
+  inline-size: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.actions__btn {
+  inline-size: 100%;
+  padding: 8px;
+
+  background-color: #FFA203;
+  border: none;
+}
+
+
+
+@media (width >=420px) {
+  .actions {
+    justify-content: end;
+  }
+}
+
+
+
+@media (width >= 520px) {
+  .card {
+    text-align: initial;
+  }
+
+  .card__name,
+  .card__rating {
+    text-align: end;
+  }
+
+  .actions {
+    flex-direction: row;
+  }
+
+  .actions__item {
+    flex: 1;
+  }
+}
+
+
+
+@media (width >= 678px) {
+  .card__name {
+    text-align: start;
+  }
+
+  .actions {
+    align-items: end;
+  }
+}

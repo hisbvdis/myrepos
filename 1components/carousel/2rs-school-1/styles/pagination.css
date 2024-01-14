@@ -1,0 +1,43 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination__btn {
+  position: relative;
+  
+  display: block;
+  inline-size: 16px;
+  block-size: 16px;
+  
+  background: $color-primary;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination__btn::before {
+  content: "";
+  position: absolute;
+  inset: 50%;
+  translate: -50% -50%;
+  
+  inline-size: calc(100% + 10px);
+  block-size: calc(100% + 10px);
+}
+
+.elem:hover:not(:focus-visible) {
+  background: $color-brown;
+}
+
+.pagination__btn--active {
+  background: $color-brown;
+}
+
+
+@media (width >= $xxl) {
+  .pagination__btn:nth-last-child(-n+2) {
+    display: none;
+  }
+}

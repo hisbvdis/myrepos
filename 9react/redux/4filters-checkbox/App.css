@@ -1,0 +1,16 @@
+h1,
+h2,
+p {
+  margin-block: 0;
+}
+
+section {
+  padding: 25px;
+  
+  background: #ccc;
+  border-radius: 10px;
+}
+
+section + section {
+  margin-block-start: 20px;
+}

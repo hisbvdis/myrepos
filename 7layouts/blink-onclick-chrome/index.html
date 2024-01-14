@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<b>Разницу смотреть, переключаясь между режимами десктопа и мобильного</b>
+<p><b>ДО - input мигают</b></p>
+
+<label class="option">
+  <input class="option__input  srOnly" type="checkbox" name="color" value="white" checked />
+  <span class="option__mark  option__mark--checkbox"></span>
+  <span class="option__name">Checkbox</span>
+</label>
+<br/>
+<label class="option">
+  <input class="option__input  srOnly" type="radio" name="type" value="accessories" checked>
+  <span class="option__mark  option__mark--radio"></span>
+  <span class="option__name">Radio</span>
+</label>
+<br/>
+<label class="option">
+  <input class="option__input  srOnly" type="radio" name="type" value="toys">
+  <span class="option__mark  option__mark--radio"></span>
+  <span class="option__name">Radio</span>
+</label>
+
+<p><b>ПОСЛЕ - input не мигают</b></p>
+<label class="option  option--waBlink">
+  <input class="option__input  srOnly" type="checkbox" name="color" value="white" checked />
+  <span class="option__mark  option__mark--checkbox"></span>
+  <span class="option__name">Checkbox</span>
+</label>
+<br/>
+<label class="option  option--waBlink">
+  <input class="option__input  srOnly" type="radio" name="type" value="accessories" checked>
+  <span class="option__mark  option__mark--radio"></span>
+  <span class="option__name">Radio</span>
+</label>
+<br/>
+<label class="option  option--waBlink">
+  <input class="option__input  srOnly" type="radio" name="type" value="toys">
+  <span class="option__mark  option__mark--radio"></span>
+  <span class="option__name">Radio</span>
+</label>
+
+
+</body>
+</html>

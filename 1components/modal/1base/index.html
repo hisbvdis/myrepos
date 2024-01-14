@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="modal.css" />
+  <script src="modal.js" type="module"></script>
+  <title>Document</title>
+</head>
+<body>
+
+<div style="block-size: 40vh;margin-block: 20px;background: #ccc;"></div>
+<div style="block-size: 40vh;margin-block: 20px;background: #ccc;"></div>
+<button type="button" data-open-modal="modal1" aria-haspopup="true">Окно №1 (маленькое)</button>
+<br />
+<br />
+<button type="button" data-open-modal="modal2" aria-haspopup="true">Окно №2 (маленькое)</button>
+<br />
+<br />
+<a href="https://google.com" data-open-modal="modal3">Окно №3 (большое)</a>
+<div style="block-size: 40vh;margin-block: 20px;background: #ccc;"></div>
+<div style="block-size: 40vh;margin-block: 20px;background: #ccc;"></div>
+
+
+<dialog class="modal" id="modal1" aria-labelledby="modal1-title" aria-describedby="modal1-desc" data-modal>
+  <div class="modal__content">
+    <h2 class="modal__title" id="modal1-title">Modal №1</h2>
+    <p class="modal__desc" id="modal1-desc">Без интерактивных элементов – в фокусе кнопка "Ok"</p>
+    <button type="button" data-close-btn>Закрыть</button>
+    <button type="button" data-focus>ОК (Focus)</button>
+    <a href="#">Ссылка</a>
+  </div>
+</dialog>
+
+<dialog class="modal" id="modal2" aria-labelledby="modal2-title" aria-describedby="modal2-desc" data-modal>
+  <div class="modal__content">
+    <h2 class="modal__title" id="modal2-title">Modal №2</h2>
+    <p class="modal__desc" id="modal2-desc">В фокусе кнопка чекбокс</p>
+    <input type="checkbox" />Интерактивный элемент (в фокусе)
+    <button type="button">ОК</button>
+    <button type="button" data-close-btn>Закрыть</button>
+  </div>
+</dialog>
+
+<dialog class="modal" id="modal3" aria-labelledby="modal3-title" aria-describedby="modal3-desc" data-modal>
+  <div class="modal__content">
+    <h2 class="modal__title" id="modal3-title">Modal №3</h2>
+    <p class="modal__desc" id="modal3-desc">Modal №3 description</p>
+    <div style="block-size: 40vh;margin-block: 20px;background: #ccc;"></div>
+    <div style="block-size: 40vh;margin-block: 20px;background: #ccc;"></div>
+    <p>В окне нет кнопки для "Enter"</p>
+    <p><textarea></textarea></p>
+    <a class="js-modalActionBtn" href="http://google.com" data-ctrl-enter-btn>Ссылка для Ctrl+Enter</a>
+    <button type="button" data-close-btn>Закрыть</button>
+  </div>
+</dialog>
+
+</body>
+</html>

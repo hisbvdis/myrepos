@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="carousel" data-js="carousel">
+    <div class="slides  carousel__slides">
+      <button class="slideBtn  slideBtn--prev  slides__slideBtn" type="button" data-js="prevBtn">
+        <span class="srOnly">Previous image</span>
+      </button>
+      <ul class="slides__list" data-js="slides">
+        <li class="slides__item">
+          <img class="slides__img" src="./images/about-1.jpg" alt="Woman in a library">
+        </li>
+        <li class="slides__item">
+          <img class="slides__img" src="./images/about-2.jpg" alt="Sculptures">
+        </li>
+        <li class="slides__item">
+          <img class="slides__img" src="./images/about-3.jpg" alt="Shelvings with books">
+        </li>
+        <li class="slides__item">
+          <img class="slides__img" src="./images/about-4.jpg" alt="Library ladder in front of book shelves">
+        </li>
+        <li class="slides__item">
+          <img class="slides__img" src="./images/about-5.jpg" alt="The library building">
+        </li>
+      </ul>
+      <button class="slideBtn  slideBtn--next  slides__slideBtn" type="button" data-js="nextBtn">
+        <span class="srOnly">Next image</span>
+      </button>
+    </div>
+    <div class="pagination" data-js="pagination">
+      <button class="pagination__btn  pagination__btn--active" data-js="0">
+        <span class="srOnly">Slide 1</span>
+      </button>
+      <button class="pagination__btn" data-js="1">
+        <span class="srOnly">Slide 2</span>
+      </button>
+      <button class="pagination__btn" data-js="2">
+        <span class="srOnly">Slide 3</span>
+      </button>
+      <button class="pagination__btn" data-js="3">
+        <span class="srOnly">Slide 4</span>
+      </button>
+      <button class="pagination__btn" data-js="4">
+        <span class="srOnly">Slide 5</span>
+      </button>
+    </div>
+  </div>
+  
+</body>
+</html>

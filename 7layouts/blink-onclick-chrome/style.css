@@ -1,0 +1,24 @@
+/* НЕПРАВИЛЬНЫЙ ВАРИАНТ */
+.option {
+  cursor: pointer;
+}
+
+
+
+/* РЕШЕНИЕ 1 (ПРОЩЕ) */
+/* Для .option задавать свойство, убирающее блик*/
+.option--waBlink {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/* РЕШЕНИЕ 2 (СЛОЖНЕЕ) */
+/* Чтобы в Chrome при клике на элементы они не мигали, при наведении 
+на элемент стилизовать курсор под "палец" только, когда используется 
+hover-указатель, то есть, мышь - (hover: hover) */
+@media (hover: hover) {
+  .option--waBlink {
+    cursor: pointer;
+  }
+}

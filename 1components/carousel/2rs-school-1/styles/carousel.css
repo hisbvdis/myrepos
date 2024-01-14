@@ -1,0 +1,15 @@
+@import "./slides";
+@import "./slideBtn";
+@import "./pagination";
+
+
+.carousel__slides {
+  margin-block-end: 25px;
+}
+
+
+@media (width >= $xxl) {
+  .carousel__slides {
+    margin-block-end: 40px;
+  }
+}

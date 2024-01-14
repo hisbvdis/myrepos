@@ -1,0 +1,19 @@
+:focus {
+  transition: outline-offset 0.1s;
+}
+
+:focus:not(:active) {
+  outline-offset: 3px;
+}
+
+
+/* С учётом предпочтений */
+/* @media (prefers-reduced-motion: no-preference) {
+  :focus {
+    transition: outline-offset 0.1s;
+  }
+
+  :focus:not(:active) {
+    outline-offset: 3px;
+  }
+} */

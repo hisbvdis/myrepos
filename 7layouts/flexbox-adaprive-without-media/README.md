@@ -1,0 +1,1 @@
+# Flexible layout without "@media"

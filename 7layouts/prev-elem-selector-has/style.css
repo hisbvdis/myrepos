@@ -1,0 +1,10 @@
+/* CURRENT HOVERED ELEMENT */
+li:hover {
+  background: #eee;
+}
+
+/* PREVIOUS AND NEXT ELEMENTS */
+li:has(+ li:hover), /* PREV */
+li:hover + li {     /* NEXT */
+  background: lightblue;
+}

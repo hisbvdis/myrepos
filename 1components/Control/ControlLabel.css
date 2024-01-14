@@ -1,0 +1,8 @@
+.controlLabel {
+  display: block;
+  margin-block-end: 3px;
+}
+
+.controlLabel__asteriks {
+  color: var(--color-red);
+}

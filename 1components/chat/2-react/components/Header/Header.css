@@ -1,0 +1,14 @@
+.header {
+  padding: 34px 31px 34px 31px;
+
+  background: url("./header-bg.jpg") center / cover no-repeat;
+}
+
+.header__title {
+  margin-block: 0;
+
+  font-size: 48px;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 3px 3px 2px rgb(0 0 0 / 50%);
+}

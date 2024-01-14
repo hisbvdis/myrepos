@@ -1,0 +1,33 @@
+/* ============================
+ * ====== Ключевые стили ======
+ * ============================
+ */
+.elem {
+  /* Не рекомендуемое свойство.
+   * Cтарая версия "display: flex" 
+   */
+  display: -webkit-box;
+
+
+  /* Не рекомендуемое свойство.
+   * Старая версия "flex-direction: column" 
+   */
+  -webkit-box-orient: vertical;
+
+  /* Не рекомендуемое свойство.
+   * В "CSS Overflow Module Level 3" выйдет новое свойство "line-clamp" 
+   */
+  -webkit-line-clamp: 4;
+
+  overflow: hidden;
+}
+
+
+
+
+/* Служебные стили (не ключевые) */
+.elem {
+  max-inline-size: 100px;
+
+  border: 1px solid #000;
+}

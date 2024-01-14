@@ -1,0 +1,15 @@
+.card {
+  --cardPadding: 15px;
+  padding: var(--cardPadding);
+
+  background-color: var(--color-white);
+  border: 1px solid var(--section-borderColor);
+}
+
+.card:has(.cardHeading, .cardSection) {
+  padding: 0;
+}
+
+.card--mt {
+  margin-block-start: 10px;
+}

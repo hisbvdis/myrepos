@@ -1,0 +1,25 @@
+/* Ширина задаётся для элемента, в который вкладывается блок с соотношением сторон */
+.wrapper {
+  inline-size: 50vw;
+}
+
+
+/* В родительском элементе через "padding" задаётся отношение высоты к ширине */
+.ratio-parent {
+  position: relative;
+
+  inline-size: 100%;
+  padding-bottom: 50%;
+  height: 0;
+
+  overflow: hidden;
+}
+
+
+/* Дочерний элемент позиционируется абсолютно и занимает всю область родителя */
+.ratio-child {
+  position: absolute;
+  inset: 0;
+
+  background: coral;
+}

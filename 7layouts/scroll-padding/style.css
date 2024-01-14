@@ -1,0 +1,22 @@
+/* Фиксированно позиционированный <header> с помощью "absolute" или "sticky" */
+.header {
+  position: sticky;
+  top:0;
+  
+  padding-block: 20px;
+
+  background: coral;
+}
+
+
+/* Дополнительный отступ сверху при скролле к элементу после нажатия на якорную сссылку*/
+:root {
+  scroll-padding-block-start: 70px;
+}
+
+
+.content {
+  min-block-size: 100vh;
+
+  background: #ccc;
+}

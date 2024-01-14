@@ -1,0 +1,12 @@
+.elem {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+body {
+  inline-size: 100px;
+
+  border: 1px solid #000;
+}

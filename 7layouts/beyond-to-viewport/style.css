@@ -1,0 +1,41 @@
+/* СЛУЖЕБНЫЕ СТИЛИ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  inline-size: 100%;
+  max-inline-size: 500px;
+  min-block-size: 100vh;
+  margin: 0 auto;
+}
+
+.main__item {
+  block-size: 20vh;
+}
+
+.inside {
+  background: lightgoldenrodyellow;
+}
+
+
+/* СТИЛИ ДЛЯ ЭЛЕМЕНТА, ВЫХОДЯЩЕГО ЗА РАМКИ ОБЁРТКИ */
+.outside {
+  /* 1. Задать относительное позиционирование, чтобы работало смещение left/right */
+  position: relative;
+
+  /* 2. Задать элементу ширину, равную ширине окна */
+  inline-size: 100vw;
+
+  /* 3. Сместить левую грань элемента на половину окна (увеличив размер самого элемента) */
+  margin-inline-start: -50vw;
+
+  /* 4. Сместить элемент вправо на половину ширины элемента */
+  inset-inline-start: 50%;
+
+  background: #ECE8F6;
+}
