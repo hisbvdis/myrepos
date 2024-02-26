@@ -1,14 +1,6 @@
-/* Font size 1rem=1px */
-/* If user will change browser default font size, save ratio */
-:root { font-size: 6.25% }
-/* body  { font-size: 16rem } */
-
-
-/* Box-sizing */
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 
 html,
 body {
@@ -17,48 +9,24 @@ body {
 }
 
 body {
-  /* Forbid width less than 320px */
   min-inline-size: 320px;
-  /* Remove native "body" margin */
   margin: 0;
 
-  /* Font without serif */
   font-family: sans-serif;
-  /* Standard browsers font size 16px = 16rem */
-  font-size: 16rem;
-  /* Lines interval */
+  font-size: 16px;
   line-height: 1.15;
-  /* Font weight */
   font-weight: 400;
-  /* Text color */
   color: #000;
 
-  /* Enable scroollbar on y axes on all pages */
   overflow-y: scroll;
 }
 
-/* Images and other media size restricting */
 img, picture, video, canvas, svg {
   display: block;
   max-inline-size: 100%;
   block-size: auto;
 }
 
-
-/* Blinking disabling in Chrome */
-a,
-summary {
-  -webkit-tap-highlight-color: transparent;
-}
-
-
-/* Cursor "pointer" for non-disabled (active) buttons */
-button:not(:disabled) {
-  cursor: pointer;
-}
-
-
-/* Remove margins */
 body,
 h1,
 h2,
@@ -75,4 +43,20 @@ dl,
 dd,
 input {
   margin: unset;
+}
+
+/* Relative */
+:root { font-size: 6.25% }
+body  { font-size: 16rem }
+
+/* Blinking disabling in Chrome */
+a,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* Cursor "pointer" for non-disabled (active) buttons */
+button:not(:disabled) {
+  cursor: pointer;
 }

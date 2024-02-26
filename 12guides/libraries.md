@@ -12,8 +12,8 @@
 
 
 ## Backend Framework
-**ElysiaJS**
-- https://elysiajs.com/
+**Fastify**
+- https://fastify.dev/
 
 
 
@@ -77,6 +77,19 @@
 - https://github.com/streamich/react-use
 
 
+
 ## Time
+**tempo**
+- https://github.com/formkit/tempo
+
 **date-fns**
 - https://github.com/date-fns/date-fns
+
+
+
+## Gallery / Slider
+**PhotoSwipe**
+- https://photoswipe.com/
+
+**SwiperJS**
+- https://swiperjs.com/

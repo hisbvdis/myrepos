@@ -6,7 +6,7 @@ import { ControlContext } from "@/app/_components/Control";
 import "./Input.css";
 
 
-const Input = forwardRef(function Input(props, ref) {
+export const Input = forwardRef(function Input(props, ref) {
   const dataFromControl = useContext(ControlContext);
   const [changed, setChanged] = useState(false);
 
@@ -31,9 +31,9 @@ const Input = forwardRef(function Input(props, ref) {
   return createElement(
     type === "textarea" ? "textarea" : "input",
     {
+      type: type,
       id: id,
       className: clsx("input", type === "textarea" && "input--textarea", className),
-      type: type,
       name: name,
       value: value,
       placeholder: placeholder,
@@ -53,4 +53,4 @@ const Input = forwardRef(function Input(props, ref) {
   )
 })
 
-export default Input;
+export const Textarea = (props) => <Input {...props} type="textarea"/>

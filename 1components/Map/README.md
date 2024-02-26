@@ -23,6 +23,5 @@
 
 
 ## Sources
-- [next-leaflet-starter](https://github.com/colbyfayock/next-leaflet-starter)
-- [leaflet-nextjs-ts-starter](https://github.com/richard-unterberg/leaflet-nextjs-ts-starter)
-- [Tomisin Abiodun — Displaying a Leaflet Map in NextJS](https://medium.com/@tomisinabiodun/displaying-a-leaflet-map-in-nextjs-85f86fccc10c)
+### Open Layers
+- [Mastering React and OpenLayers Integration: A Comprehensive Guide](https://mxd.codes/articles/how-to-create-a-web-map-with-open-layers-and-react)
