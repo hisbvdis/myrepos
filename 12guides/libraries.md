@@ -18,14 +18,8 @@
 
 
 ## Database / SQL
-**Prisma**
-- Database ORM
-- https://www.prisma.io/
-- [Comparing Prisma and Mongoose for MongoDB](https://levelup.gitconnected.com/comparing-prisma-and-mongoose-for-mongodb-a-comprehensive-analysis-531c656fc118)
-
-**NocoDB**
-- Turns any DB into a smart spreadsheet
-- https://github.com/nocodb/nocodb
+**node-postgres** (Driver)
+- https://github.com/brianc/node-postgres
 
 
 
@@ -93,3 +87,26 @@
 
 **SwiperJS**
 - https://swiperjs.com/
+
+
+
+## Touch gestures
+**Hammer.js**
+- https://hammerjs.github.io/
+
+
+
+## DND (Drag And Drop)
+**pragmatic-drag-and-drop**
+-https://github.com/atlassian/pragmatic-drag-and-drop
+
+
+
+## Upscale
+**clarity-upscaler**
+- https://github.com/philz1337x/clarity-upscaler
+
+
+## Foreign libraries (DLL, Win32)
+**koffi**
+- https://koffi.dev/
