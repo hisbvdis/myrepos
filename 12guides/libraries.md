@@ -73,11 +73,14 @@
 
 
 ## Time
-**tempo**
-- https://github.com/formkit/tempo
+**dayjs**
+- https://github.com/iamkun/dayjs
 
 **date-fns**
 - https://github.com/date-fns/date-fns
+
+**tempo**
+- https://github.com/formkit/tempo
 
 
 
