@@ -113,3 +113,9 @@
 ## Foreign libraries (DLL, Win32)
 **koffi**
 - https://koffi.dev/
+
+
+## Machine learning
+**Grounding-DINO-1.5-API**
+- Recognition
+- https://github.com/IDEA-Research/Grounding-DINO-1.5-API
