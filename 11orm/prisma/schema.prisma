@@ -1,0 +1,62 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum objectTypeEnum {
+  org
+  place
+}
+
+enum optionsNumberEnum {
+  one
+  many
+}
+
+// ===========================================================================
+// SECTION / SPEC / OPTION
+// ===========================================================================
+model section {
+  id            Int               @id @default(autoincrement())
+  name_plural   String
+  name_singular String
+  object_type   objectTypeEnum
+  specs         section_on_spec[] @relation("section_on_spec-section")
+}
+
+model spec {
+  id             Int               @id @default(autoincrement())
+  name_service   String
+  name_public    String
+  object_type    objectTypeEnum
+  options_number optionsNumberEnum
+  options        option[]          @relation("option_spec")
+  sections       section_on_spec[] @relation("section_on_spec-spec")
+}
+
+model option {
+  id      Int    @id @default(autoincrement())
+  name    String
+  spec_id Int
+  order   Int
+  spec    spec?  @relation("option_spec", fields: [spec_id], references: [id], onDelete: Cascade)
+}
+
+model section_on_spec {
+  id         Int     @id @default(autoincrement())
+  section_id Int
+  spec_id    Int
+  section    section @relation("section_on_spec-section", fields: [section_id], references: [id])
+  spec       spec    @relation("section_on_spec-spec", fields: [spec_id], references: [id])
+}
