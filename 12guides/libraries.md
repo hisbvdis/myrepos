@@ -73,11 +73,11 @@
 
 
 ## Time
-**dayjs**
-- https://github.com/iamkun/dayjs
-
 **date-fns**
 - https://github.com/date-fns/date-fns
+
+**dayjs**
+- https://github.com/iamkun/dayjs
 
 **tempo**
 - https://github.com/formkit/tempo
@@ -116,6 +116,12 @@
 
 
 ## Machine learning
+### Visual Recognition
 **Grounding-DINO-1.5-API**
 - Recognition
 - https://github.com/IDEA-Research/Grounding-DINO-1.5-API
+
+
+## URL Search Params
+**query-string**
+- https://www.npmjs.com/package/query-string
